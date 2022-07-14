@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="./CSS/reset.css" rel="stylesheet" />
+    <link href="./CSS/style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu E-Commerce</title>
+</head>
+<body>
+    <!-----------Cabeçalho da Minha Página------------------->
+    <header class="top"> 
+        <h1>Words</h1>
+        <!-------Barra de Navegação------------>
+        <nav>
+            <ul id="listNav" class="list-nav">
+                <li data-tag="Todos" class="item-nav">Todos</li>
+                <li data-tag="Fantasia" class="item-nav">Fantasia</li>
+                <li data-tag="Mistério" class="item-nav">Mistério</li>
+                <li data-tag="Games" class="item-nav">Games</li>
+                <li data-tag="Quadrinhos" class="item-nav">Quadrinhos</li>
+                <li data-tag="Romance" class="item-nav">Românce</li>
+                <li data-tag="Ficção" class="item-nav">Ficção</li>
+                <li data-tag="Magia" class="item-nav">Magia</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------Container de Produtos------------>
+    <main class="container">
+        <section class="post-Produtcs">
+            <ul id="listProduct" class="list_product">
+            </ul>
+        </section>
+        <!----Parte lateral aonde fica o Botão de Pesquisar e o Carrinho de Compras------------------->
+        <aside>
+            <!-------Botão de Pesquisar------------>
+            <form class="search">
+                <input type="text" id="inputFind" placeholder="Digite aqui sua pesquisa">
+                <button id='btnFind' type="button" class="click-search">Pesquisar</button>
+            </form>
+             <!-------Carrinho de compras------------>
+            <section class="shop-cart-section">
+                <div class="shop-cart">
+                    <h2 class="header"> Carrinho de Compras</h2>
+                    <ul class="list-cart">
+                    </ul>
+                </div>
+                <!-------Card que exibe Valores e Quantidade de Produtos------------>
+                <div class="value-quantity">
+                    <div class="quantity">
+                        <span>Quantidade:</span> <span id="quantity-number">0</span>
+                    </div>
+                    <div class="value-card">
+                        <span>Total:</span> <span id="value-number">R$ 0</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+  <script src="./JS/dataBase.js"></script> 
+  <script src="./JS/script.js"></script> 
+</body>
+</html>
